@@ -9,6 +9,7 @@ namespace SprykerEco\Client\ComputopShipment;
 
 use Spryker\Client\Kernel\AbstractDependencyProvider;
 use Spryker\Client\Kernel\Container;
+use SprykerEco\Client\ComputopShipment\Dependency\Client\ComputopShipmentToZedRequestClientBridge;
 
 class ComputopShipmentDependencyProvider extends AbstractDependencyProvider
 {
@@ -37,7 +38,7 @@ class ComputopShipmentDependencyProvider extends AbstractDependencyProvider
     protected function addZedRequestClient(Container $container): Container
     {
         $container->set(static::CLIENT_ZED_REQUEST, function (Container $container) {
-            return $container->getLocator()->zedRequest()->client();
+            return new ComputopShipmentToZedRequestClientBridge($container->getLocator()->zedRequest()->client());
         });
 
         return $container;

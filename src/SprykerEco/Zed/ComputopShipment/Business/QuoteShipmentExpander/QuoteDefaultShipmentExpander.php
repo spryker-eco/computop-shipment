@@ -41,9 +41,9 @@ class QuoteDefaultShipmentExpander implements QuoteShipmentExpanderInterface
     /**
      * @param \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer
      *
+     * @return \Generated\Shared\Transfer\QuoteTransfer
      * @throws \SprykerEco\Zed\ComputopShipment\Business\ComputopShipmentException
      *
-     * @return \Generated\Shared\Transfer\QuoteTransfer
      */
     public function expand(QuoteTransfer $quoteTransfer): QuoteTransfer
     {
@@ -84,12 +84,10 @@ class QuoteDefaultShipmentExpander implements QuoteShipmentExpanderInterface
      */
     protected function createShipmentTransfer(ShipmentMethodTransfer $shipmentMethodTransfer): ShipmentTransfer
     {
-        $itemShipmentTransfer = new ShipmentTransfer();
-        $itemShipmentTransfer->setShipmentSelection($shipmentMethodTransfer->getIdShipmentMethod());
-        $itemShipmentTransfer->setMethod($shipmentMethodTransfer);
-        $itemShipmentTransfer->setShippingAddress(new AddressTransfer());
-
-        return $itemShipmentTransfer;
+        return (new ShipmentTransfer())
+            ->setShipmentSelection($shipmentMethodTransfer->getIdShipmentMethod())
+            ->setMethod($shipmentMethodTransfer)
+            ->setShippingAddress(new AddressTransfer());
     }
 
     /**

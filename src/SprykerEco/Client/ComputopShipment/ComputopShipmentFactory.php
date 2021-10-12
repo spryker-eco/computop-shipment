@@ -8,7 +8,7 @@
 namespace SprykerEco\Client\ComputopShipment;
 
 use Spryker\Client\Kernel\AbstractFactory;
-use Spryker\Client\ZedRequest\ZedRequestClientInterface;
+use SprykerEco\Client\ComputopShipment\Dependency\Client\ComputopShipmentToZedRequestClientInterface;
 use SprykerEco\Client\ComputopShipment\QuoteShipmentExpander\QuoteDefaultShipmentExpander;
 use SprykerEco\Client\ComputopShipment\QuoteShipmentExpander\QuoteShipmentExpanderInterface;
 use SprykerEco\Client\ComputopShipment\Zed\ComputopShipmentStub;
@@ -21,15 +21,13 @@ class ComputopShipmentFactory extends AbstractFactory
      */
     public function createZedStub(): ComputopShipmentStubInterface
     {
-        return new ComputopShipmentStub(
-            $this->getZedRequestClient()
-        );
+        return new ComputopShipmentStub($this->getZedRequestClient());
     }
 
     /**
-     * @return \Spryker\Client\ZedRequest\ZedRequestClientInterface
+     * @return ComputopShipmentToZedRequestClientInterface
      */
-    public function getZedRequestClient(): ZedRequestClientInterface
+    public function getZedRequestClient(): ComputopShipmentToZedRequestClientInterface
     {
         return $this->getProvidedDependency(ComputopShipmentDependencyProvider::CLIENT_ZED_REQUEST);
     }

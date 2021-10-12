@@ -8,17 +8,22 @@
 namespace SprykerEco\Client\ComputopShipment\Zed;
 
 use Generated\Shared\Transfer\QuoteTransfer;
-use Spryker\Client\ZedRequest\Stub\ZedRequestStub;
-use Spryker\Client\ZedRequest\ZedRequestClientInterface;
+use Spryker\Shared\Kernel\Transfer\TransferInterface;
+use SprykerEco\Client\ComputopShipment\Dependency\Client\ComputopShipmentToZedRequestClientInterface;
 
-class ComputopShipmentStub extends ZedRequestStub implements ComputopShipmentStubInterface
+class ComputopShipmentStub implements ComputopShipmentStubInterface
 {
     /**
-     * @param \Spryker\Client\ZedRequest\ZedRequestClientInterface $zedStub
+     * @var ComputopShipmentToZedRequestClientInterface
      */
-    public function __construct(ZedRequestClientInterface $zedStub)
+    protected ComputopShipmentToZedRequestClientInterface $zedRequestClient;
+
+    /**
+     * @param ComputopShipmentToZedRequestClientInterface $zedRequestClient
+     */
+    public function __construct(ComputopShipmentToZedRequestClientInterface $zedRequestClient)
     {
-        parent::__construct($zedStub);
+        $this->zedRequestClient = $zedRequestClient;
     }
 
     /**
@@ -29,7 +34,7 @@ class ComputopShipmentStub extends ZedRequestStub implements ComputopShipmentStu
     public function expandQuoteWithDefaultShippingMethod(QuoteTransfer $quoteTransfer): QuoteTransfer
     {
         /** @var \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer */
-        $quoteTransfer = $this->zedStub->call('/computop-shipment/gateway/expand-quote-with-default-shipping-method', $quoteTransfer);
+        $quoteTransfer = $this->zedRequestClient->call('/computop-shipment/gateway/expand-quote-with-default-shipping-method', $quoteTransfer);
 
         return $quoteTransfer;
     }
