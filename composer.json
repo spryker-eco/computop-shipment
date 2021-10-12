@@ -4,29 +4,21 @@
     "description": "Computop module",
     "license": "MIT",
     "require": {
-        "php": ">=7.3",
-        "spryker/application": "^3.0.0",
-        "spryker/config": "^3.0.0",
+        "php": ">=7.4",
         "spryker/kernel": "^3.30.0",
-        "spryker/propel-orm": "^1.6.0",
         "spryker/quote": "^1.0.0 || ^2.0.0",
         "spryker/shipment": "^7.0.0 || ^8.0.0",
-        "spryker/zed-request": "^3.0.0"
+        "spryker/zed-request": "^3.0.0",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0"
     },
     "require-dev": {
         "phpstan/phpstan": "*",
-        "spryker-shop/shop-application": "*",
-        "spryker/checkout": "*",
         "spryker/code-sniffer": "*",
         "spryker/customer": "*",
-        "spryker/guzzle": "*",
-        "spryker/payment": "*",
-        "spryker/propel": "*",
-        "spryker/silex": "*",
         "spryker/testify": "*"
     },
-    "suggest": {
-    },
+    "suggest": [],
     "autoload": {
         "psr-4": {
             "SprykerEco\\": "src/SprykerEco/"

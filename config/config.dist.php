@@ -5,4 +5,4 @@
 
 use SprykerEco\Shared\ComputopShipment\ComputopShipmentConstants;
 
-$config[ComputopShipmentConstants::PAYPAL_EXPRESS_DEFAULT_SHIPMENT_METHOD_ID] = 1;
+$config[ComputopShipmentConstants::PAYPAL_EXPRESS_DEFAULT_SHIPMENT_METHOD_KEY] = 'spryker_dummy_shipment-standard';
