@@ -25,7 +25,7 @@ class ComputopShipmentFactory extends AbstractFactory
     }
 
     /**
-     * @return ComputopShipmentToZedRequestClientInterface
+     * @return \SprykerEco\Client\ComputopShipment\Dependency\Client\ComputopShipmentToZedRequestClientInterface
      */
     public function getZedRequestClient(): ComputopShipmentToZedRequestClientInterface
     {

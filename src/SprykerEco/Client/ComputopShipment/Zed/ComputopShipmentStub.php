@@ -8,18 +8,17 @@
 namespace SprykerEco\Client\ComputopShipment\Zed;
 
 use Generated\Shared\Transfer\QuoteTransfer;
-use Spryker\Shared\Kernel\Transfer\TransferInterface;
 use SprykerEco\Client\ComputopShipment\Dependency\Client\ComputopShipmentToZedRequestClientInterface;
 
 class ComputopShipmentStub implements ComputopShipmentStubInterface
 {
     /**
-     * @var ComputopShipmentToZedRequestClientInterface
+     * @var \SprykerEco\Client\ComputopShipment\Dependency\Client\ComputopShipmentToZedRequestClientInterface
      */
     protected ComputopShipmentToZedRequestClientInterface $zedRequestClient;
 
     /**
-     * @param ComputopShipmentToZedRequestClientInterface $zedRequestClient
+     * @param \SprykerEco\Client\ComputopShipment\Dependency\Client\ComputopShipmentToZedRequestClientInterface $zedRequestClient
      */
     public function __construct(ComputopShipmentToZedRequestClientInterface $zedRequestClient)
     {
