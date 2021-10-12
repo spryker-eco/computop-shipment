@@ -18,7 +18,7 @@
         "spryker/customer": "*",
         "spryker/testify": "*"
     },
-    "suggest": [],
+    "suggest": {},
     "autoload": {
         "psr-4": {
             "SprykerEco\\": "src/SprykerEco/"
