@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * MIT License
+ * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
+ */
+
 namespace SprykerEco\Yves\ComputopShipment\Plugin\Computop;
 
 use Generated\Shared\Transfer\QuoteTransfer;
@@ -17,9 +22,9 @@ class ExpandShipmentPlugin extends AbstractPlugin implements PayPalExpressInitPl
      *
      * @api
      *
-     * @param QuoteTransfer $quoteTransfer
+     * @param \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer
      *
-     * @return QuoteTransfer
+     * @return \Generated\Shared\Transfer\QuoteTransfer
      */
     public function aggregate(QuoteTransfer $quoteTransfer): QuoteTransfer
     {

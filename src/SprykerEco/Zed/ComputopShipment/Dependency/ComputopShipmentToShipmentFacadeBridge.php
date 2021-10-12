@@ -8,7 +8,6 @@
 namespace SprykerEco\Zed\ComputopShipment\Dependency;
 
 use Generated\Shared\Transfer\QuoteTransfer;
-use Generated\Shared\Transfer\ShipmentMethodsCollectionTransfer;
 use Generated\Shared\Transfer\ShipmentMethodTransfer;
 
 class ComputopShipmentToShipmentFacadeBridge implements ComputopShipmentToShipmentFacadeInterface
@@ -39,7 +38,7 @@ class ComputopShipmentToShipmentFacadeBridge implements ComputopShipmentToShipme
     /**
      * @param string $shipmentMethodKey
      *
-     * @return ShipmentMethodTransfer|null
+     * @return \Generated\Shared\Transfer\ShipmentMethodTransfer|null
      */
     public function findShipmentMethodByKey(string $shipmentMethodKey): ?ShipmentMethodTransfer
     {

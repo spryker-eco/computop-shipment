@@ -3,3 +3,7 @@ parameters:
     checkMissingIterableValueType: false
     excludePaths:
     ignoreErrors:
+        - '#Parameter \$.+ of method .+ has invalid typehint type.+#'
+        - '#Return typehint of method .+ has invalid type.+#'
+        - '#.+Transfer.+#'
+        - '#Call to method.+on an unknown class.+AutoCompletion#'

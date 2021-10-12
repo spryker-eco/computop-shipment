@@ -1,13 +1,20 @@
 <?php
 
+/**
+ * MIT License
+ * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
+ */
+
 namespace SprykerEcoTest\Zed\ComputopShipment;
 
+use Codeception\Actor;
 use Generated\Shared\DataBuilder\QuoteBuilder;
 use Generated\Shared\Transfer\QuoteTransfer;
 use Generated\Shared\Transfer\StoreTransfer;
 
 /**
  * Inherited Methods
+ *
  * @method void wantToTest($text)
  * @method void wantTo($text)
  * @method void execute($callable)
@@ -21,13 +28,13 @@ use Generated\Shared\Transfer\StoreTransfer;
  * @method \SprykerEco\Zed\ComputopShipment\Business\ComputopShipmentFacadeInterface getFacade($moduleName = null)
  *
  * @SuppressWarnings(PHPMD)
-*/
-class ComputopShipmentBusinessTester extends \Codeception\Actor
+ */
+class ComputopShipmentBusinessTester extends Actor
 {
     use _generated\ComputopShipmentBusinessTesterActions;
 
     /**
-     * @return QuoteTransfer
+     * @return \Generated\Shared\Transfer\QuoteTransfer
      */
     public function haveQuoteWithItems(): QuoteTransfer
     {
@@ -43,6 +50,5 @@ class ComputopShipmentBusinessTester extends \Codeception\Actor
         $quoteTransfer->setPriceMode('');
 
         return $quoteTransfer;
-
     }
 }

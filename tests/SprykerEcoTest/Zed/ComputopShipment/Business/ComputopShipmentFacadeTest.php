@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * MIT License
+ * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
+ */
+
 namespace SprykerEcoTest\Zed\ComputopShipment\Business;
 
 use Codeception\Test\Unit;
@@ -28,7 +33,10 @@ class ComputopShipmentFacadeTest extends Unit
      */
     protected $persistentQuoteHelper;
 
-    public function testSuccessExpandQuoteWithDefaultShippingMethod()
+    /**
+     * @return void
+     */
+    public function testSuccessExpandQuoteWithDefaultShippingMethod(): void
     {
         //Arrange
         $this->tester->setConfig(ComputopShipmentConstants::PAYPAL_EXPRESS_DEFAULT_SHIPMENT_METHOD_KEY, static::CORRECT_SHIPMENT_METHOD_KEY);

@@ -35,7 +35,7 @@ class ComputopShipmentFactory extends AbstractFactory
     }
 
     /**
-     * @return \SprykerEco\Client\Computop\Expander\QuoteShipmentExpanderInterface
+     * @return \SprykerEco\Client\ComputopShipment\QuoteShipmentExpander\QuoteShipmentExpanderInterface
      */
     public function createComputopQuoteDefaultShipmentExpander(): QuoteShipmentExpanderInterface
     {

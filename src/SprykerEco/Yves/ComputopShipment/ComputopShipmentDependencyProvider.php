@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * MIT License
+ * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
+ */
+
 namespace SprykerEco\Yves\ComputopShipment;
 
 use Spryker\Yves\Kernel\AbstractBundleDependencyProvider;
@@ -8,9 +13,17 @@ use SprykerEco\Yves\ComputopShipment\Dependency\ComputopShipmentToShipmentClient
 
 class ComputopShipmentDependencyProvider extends AbstractBundleDependencyProvider
 {
+    /**
+     * @var string
+     */
     public const CLIENT_SHIPMENT = 'CLIENT_SHIPMENT';
 
-    public function provideDependencies(Container $container)
+    /**
+     * @param \Spryker\Yves\Kernel\Container $container
+     *
+     * @return \Spryker\Yves\Kernel\Container
+     */
+    public function provideDependencies(Container $container): Container
     {
         $container = parent::provideDependencies($container);
 
@@ -20,9 +33,9 @@ class ComputopShipmentDependencyProvider extends AbstractBundleDependencyProvide
     }
 
     /**
-     * @param Container $container
+     * @param \Spryker\Yves\Kernel\Container $container
      *
-     * @return Container
+     * @return \Spryker\Yves\Kernel\Container
      */
     protected function addShipmentClient(Container $container): Container
     {

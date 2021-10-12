@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * MIT License
+ * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
+ */
+
 namespace SprykerEco\Yves\ComputopShipment;
 
 use Spryker\Yves\Kernel\AbstractFactory;
@@ -8,7 +13,7 @@ use SprykerEco\Yves\ComputopShipment\Dependency\ComputopShipmentToShipmentClient
 class ComputopShipmentFactory extends AbstractFactory
 {
     /**
-     * @return ComputopShipmentToShipmentClientInterface
+     * @return \SprykerEco\Yves\ComputopShipment\Dependency\ComputopShipmentToShipmentClientInterface
      */
     public function getShipmentClient(): ComputopShipmentToShipmentClientInterface
     {

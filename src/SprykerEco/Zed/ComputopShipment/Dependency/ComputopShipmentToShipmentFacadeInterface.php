@@ -8,7 +8,6 @@
 namespace SprykerEco\Zed\ComputopShipment\Dependency;
 
 use Generated\Shared\Transfer\QuoteTransfer;
-use Generated\Shared\Transfer\ShipmentMethodsCollectionTransfer;
 use Generated\Shared\Transfer\ShipmentMethodTransfer;
 
 interface ComputopShipmentToShipmentFacadeInterface
