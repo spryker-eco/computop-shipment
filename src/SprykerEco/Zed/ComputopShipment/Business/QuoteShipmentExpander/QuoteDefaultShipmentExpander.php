@@ -40,7 +40,7 @@ class QuoteDefaultShipmentExpander implements QuoteShipmentExpanderInterface
     /**
      * @param \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer
      *
-     * @throws \SprykerEco\Zed\ComputopShipment\Business\ComputopShipmentException
+     * @throws \SprykerEco\Zed\ComputopShipment\Business\Exception\ComputopShipmentException
      *
      * @return \Generated\Shared\Transfer\QuoteTransfer
      */
