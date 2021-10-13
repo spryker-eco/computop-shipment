@@ -14,7 +14,7 @@ use Spryker\Client\Quote\Dependency\Plugin\QuoteTransferExpanderPluginInterface;
 /**
  * @method \SprykerEco\Client\ComputopShipment\ComputopShipmentFactory getFactory()
  */
-class DefaultShippingMethodPlugin extends AbstractPlugin implements QuoteTransferExpanderPluginInterface
+class DefaultShippingMethodQuoteTransferExpanderPlugin extends AbstractPlugin implements QuoteTransferExpanderPluginInterface
 {
     /**
      * {@inheritDoc}

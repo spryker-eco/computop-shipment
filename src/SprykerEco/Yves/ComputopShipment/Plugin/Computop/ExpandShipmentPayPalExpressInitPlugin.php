@@ -14,7 +14,7 @@ use SprykerEco\Yves\Computop\Dependency\Plugin\PayPalExpressInitPluginInterface;
 /**
  * @method \SprykerEco\Yves\ComputopShipment\ComputopShipmentFactory getFactory()
  */
-class ExpandShipmentPlugin extends AbstractPlugin implements PayPalExpressInitPluginInterface
+class ExpandShipmentPayPalExpressInitPlugin extends AbstractPlugin implements PayPalExpressInitPluginInterface
 {
     /**
      * {@inheritDoc}
