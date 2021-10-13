@@ -35,7 +35,7 @@ class ComputopShipmentFactory extends AbstractFactory
     /**
      * @return \SprykerEco\Client\ComputopShipment\QuoteShipmentExpander\QuoteShipmentExpanderInterface
      */
-    public function createComputopQuoteDefaultShipmentExpander(): QuoteShipmentExpanderInterface
+    public function createQuoteShipmentExpander(): QuoteShipmentExpanderInterface
     {
         return new QuoteDefaultShipmentExpander($this->createZedStub());
     }

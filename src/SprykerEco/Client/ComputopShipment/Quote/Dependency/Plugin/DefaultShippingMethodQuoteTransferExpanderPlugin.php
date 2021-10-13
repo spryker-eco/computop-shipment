@@ -30,8 +30,6 @@ class DefaultShippingMethodQuoteTransferExpanderPlugin extends AbstractPlugin im
      */
     public function expandQuote(QuoteTransfer $quoteTransfer): QuoteTransfer
     {
-        return $this->getFactory()
-            ->createComputopQuoteDefaultShipmentExpander()
-            ->expand($quoteTransfer);
+        return $this->getFactory()->createQuoteShipmentExpander()->expand($quoteTransfer);
     }
 }
