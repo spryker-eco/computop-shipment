@@ -1,7 +1,7 @@
 {
     "name": "spryker-eco/computop-shipment",
     "type": "library",
-    "description": "Computop module",
+    "description": "ComputopShipment module",
     "license": "MIT",
     "require": {
         "php": ">=7.4",
@@ -14,7 +14,6 @@
         "codeception/module-asserts": "^1.0.0"
     },
     "require-dev": {
-        "phpstan/phpstan": "*",
         "spryker/code-sniffer": "*",
         "spryker/customer": "*",
         "spryker/testify": "*"
