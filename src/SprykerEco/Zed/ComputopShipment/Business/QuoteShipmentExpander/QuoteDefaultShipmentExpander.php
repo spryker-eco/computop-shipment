@@ -52,7 +52,7 @@ class QuoteDefaultShipmentExpander implements QuoteShipmentExpanderInterface
         $defaultShipmentMethodTransfer = $this->shipmentFacade->findShipmentMethodByKey($defaultShipmentMethodKey);
         if ($defaultShipmentMethodTransfer === null || $defaultShipmentMethodTransfer->getIsActive() === false) {
             throw new ComputopShipmentException(
-                sprintf('Default shipment method %s is not available!', $defaultShipmentMethodKey)
+                sprintf('Default shipment method "%s" is not available!', $defaultShipmentMethodKey)
             );
         }
 

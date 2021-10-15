@@ -15,7 +15,7 @@ class ComputopShipmentStub implements ComputopShipmentStubInterface
     /**
      * @var \SprykerEco\Client\ComputopShipment\Dependency\Client\ComputopShipmentToZedRequestClientInterface
      */
-    protected ComputopShipmentToZedRequestClientInterface $zedRequestClient;
+    protected $zedRequestClient;
 
     /**
      * @param \SprykerEco\Client\ComputopShipment\Dependency\Client\ComputopShipmentToZedRequestClientInterface $zedRequestClient

@@ -16,22 +16,17 @@ class ComputopShipmentFacadeTest extends Unit
     /**
      * @var string
      */
-    public const CORRECT_SHIPMENT_METHOD_KEY = 'spryker_dummy_shipment-standard';
+    protected const CORRECT_SHIPMENT_METHOD_KEY = 'spryker_dummy_shipment-standard';
 
     /**
      * @var string
      */
-    public const INCORRECT_SHIPMENT_METHOD_KEY = 'incorrect';
+    protected const INCORRECT_SHIPMENT_METHOD_KEY = 'incorrect';
 
     /**
      * @var \SprykerEcoTest\Zed\ComputopShipment\ComputopShipmentBusinessTester
      */
     protected $tester;
-
-    /**
-     * @var \SprykerTest\Shared\Quote\Helper\PersistentQuoteHelper
-     */
-    protected $persistentQuoteHelper;
 
     /**
      * @return void
@@ -47,12 +42,13 @@ class ComputopShipmentFacadeTest extends Unit
 
         //Assert
         $this->assertNotNull($quoteTransfer->getShipment());
+        $this->assertSame(static::CORRECT_SHIPMENT_METHOD_KEY, $quoteTransfer->getShipment()->getMethod()->getShipmentMethodKey());
     }
 
     /**
      * @return void
      */
-    public function testMethodNotFoundExpandQuoteWithDefaultShippingMethod(): void
+    public function testExpandQuoteWithDefaultShippingMethodThrowsExceptionWhenShipmentMethodNotFound(): void
     {
         //Arrange
         $this->tester->setConfig(ComputopShipmentConstants::PAYPAL_EXPRESS_DEFAULT_SHIPMENT_METHOD_KEY, static::INCORRECT_SHIPMENT_METHOD_KEY);

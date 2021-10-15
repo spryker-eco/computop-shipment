@@ -25,6 +25,8 @@ class ComputopShipmentDependencyProvider extends AbstractDependencyProvider
      */
     public function provideServiceLayerDependencies(Container $container): Container
     {
+        $container = parent::provideServiceLayerDependencies($container);
+
         $container = $this->addZedRequestClient($container);
 
         return $container;

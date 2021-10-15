@@ -14,7 +14,7 @@ interface ComputopShipmentConstants
 {
     /**
      * Specification:
-     *  - Shipment method key for cart default shipment.
+     * - Shipment method key for cart default shipment.
      *
      * @api
      *
