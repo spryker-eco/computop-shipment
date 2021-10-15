@@ -13,9 +13,9 @@ use SprykerEco\Client\ComputopShipment\Zed\ComputopShipmentStubInterface;
 class QuoteDefaultShipmentExpander implements QuoteShipmentExpanderInterface
 {
     /**
-     * @var \SprykerEco\Client\ComputopShipment\Zed\ComputopShipmentStubInterface $computopShipmentStub
+     * @var \SprykerEco\Client\ComputopShipment\Zed\ComputopShipmentStubInterface
      */
-    protected $computopShipmentStub; // phpcs:ignore
+    protected $computopShipmentStub;
 
     /**
      * @param \SprykerEco\Client\ComputopShipment\Zed\ComputopShipmentStubInterface $computopShipmentStub
