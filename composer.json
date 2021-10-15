@@ -9,7 +9,7 @@
         "spryker/quote": "^1.0.0 || ^2.0.0",
         "spryker/shipment": "^7.0.0 || ^8.0.0",
         "spryker/zed-request": "^3.0.0",
-        "spryker-eco/computop": "dev-feature/eco-3656/eco-3658-enable-paypal-express as 3.3.0",
+        "spryker-eco/computop": "dev-feature/eco-3656/dev-paypal-express as 3.3.0",
         "codeception/module-phpbrowser": "^1.0.0",
         "codeception/module-asserts": "^1.0.0"
     },
