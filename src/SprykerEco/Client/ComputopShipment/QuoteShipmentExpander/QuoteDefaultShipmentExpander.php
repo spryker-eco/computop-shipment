@@ -15,7 +15,7 @@ class QuoteDefaultShipmentExpander implements QuoteShipmentExpanderInterface
     /**
      * @var \SprykerEco\Client\ComputopShipment\Zed\ComputopShipmentStubInterface $computopShipmentStub
      */
-    protected $computopShipmentStub;
+    protected $computopShipmentStub; // phpcs:ignore
 
     /**
      * @param \SprykerEco\Client\ComputopShipment\Zed\ComputopShipmentStubInterface $computopShipmentStub
