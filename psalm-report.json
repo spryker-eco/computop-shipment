@@ -1,0 +1,45 @@
+{
+    "error": [],
+    "warning": [
+        {
+            "severity": "info",
+            "line_from": 35,
+            "line_to": 35,
+            "type": "PossiblyInvalidMethodCall",
+            "message": "Cannot call method on possible array<array-key, Generated\\Shared\\Transfer\\ItemTransfer> variable ",
+            "file_name": "vendor/spryker-eco/computop-shipment/src/SprykerEco/Client/ComputopShipment/QuoteShipmentExpander/QuoteDefaultShipmentExpander.php",
+            "snippet": "        if ($quoteTransfer->getItems()->count() === 0 || $this->isQuoteHasShipment($quoteTransfer)) {",
+            "selected_text": "count",
+            "error_level": 3,
+            "shortcode": 113,
+            "other_references": null
+        },
+        {
+            "severity": "info",
+            "line_from": 50,
+            "line_to": 50,
+            "type": "PossiblyNullReference",
+            "message": "Cannot call method getMethod on possibly null value",
+            "file_name": "vendor/spryker-eco/computop-shipment/src/SprykerEco/Client/ComputopShipment/QuoteShipmentExpander/QuoteDefaultShipmentExpander.php",
+            "snippet": "            if ($itemTransfer->getShipment() !== null && $itemTransfer->getShipment()->getMethod() !== null) {",
+            "selected_text": "getMethod",
+            "error_level": 3,
+            "shortcode": 83,
+            "other_references": null
+        },
+        {
+            "severity": "info",
+            "line_from": 89,
+            "line_to": 89,
+            "type": "InvalidScalarArgument",
+            "message": "Argument 1 of Generated\\Shared\\Transfer\\ShipmentTransfer::setShipmentSelection expects null|string, int|null provided",
+            "file_name": "vendor/spryker-eco/computop-shipment/src/SprykerEco/Zed/ComputopShipment/Business/QuoteShipmentExpander/QuoteDefaultShipmentExpander.php",
+            "snippet": "            ->setShipmentSelection($shipmentMethodTransfer->getIdShipmentMethod())",
+            "selected_text": "$shipmentMethodTransfer->getIdShipmentMethod()",
+            "error_level": 4,
+            "shortcode": 12,
+            "other_references": null
+        }
+    ],
+    "deprecation": []
+}
