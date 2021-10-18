@@ -8,7 +8,6 @@
 namespace SprykerEco\Zed\ComputopShipment\Business;
 
 use Generated\Shared\Transfer\QuoteTransfer;
-use SprykerEco\Zed\ComputopShipment\Business\Exception\ComputopDefaultShipmentException;
 
 interface ComputopShipmentFacadeInterface
 {
@@ -18,8 +17,6 @@ interface ComputopShipmentFacadeInterface
      * - Expands `QuoteTransfer` with default shipping method from config.
      *
      * @api
-     *
-     * @throws ComputopDefaultShipmentException
      *
      * @param \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer
      *

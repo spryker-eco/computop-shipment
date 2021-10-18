@@ -9,7 +9,6 @@ namespace SprykerEco\Zed\ComputopShipment\Business;
 
 use Generated\Shared\Transfer\QuoteTransfer;
 use Spryker\Zed\Kernel\Business\AbstractFacade;
-use SprykerEco\Zed\ComputopShipment\Business\Exception\ComputopDefaultShipmentException;
 
 /**
  * @method \SprykerEco\Zed\ComputopShipment\Business\ComputopShipmentBusinessFactory getFactory()

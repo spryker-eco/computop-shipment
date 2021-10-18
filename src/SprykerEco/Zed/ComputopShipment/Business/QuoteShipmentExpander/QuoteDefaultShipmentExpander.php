@@ -38,10 +38,9 @@ class QuoteDefaultShipmentExpander implements QuoteShipmentExpanderInterface
     }
 
     /**
+     * @param \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer
      *
      * @throws \SprykerEco\Zed\ComputopShipment\Business\Exception\ComputopDefaultShipmentException
-     *
-     * @param \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer
      *
      * @return \Generated\Shared\Transfer\QuoteTransfer
      */
