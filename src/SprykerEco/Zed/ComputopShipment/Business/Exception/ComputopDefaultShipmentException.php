@@ -9,6 +9,6 @@ namespace SprykerEco\Zed\ComputopShipment\Business\Exception;
 
 use Exception;
 
-class ComputopShipmentException extends Exception
+class ComputopDefaultShipmentException extends Exception
 {
 }

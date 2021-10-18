@@ -9,7 +9,7 @@ namespace SprykerEcoTest\Zed\ComputopShipment\Business;
 
 use Codeception\Test\Unit;
 use SprykerEco\Shared\ComputopShipment\ComputopShipmentConstants;
-use SprykerEco\Zed\ComputopShipment\Business\ComputopShipmentException;
+use SprykerEco\Zed\ComputopShipment\Business\Exception\ComputopDefaultShipmentException;
 
 class ComputopShipmentFacadeTest extends Unit
 {
@@ -31,7 +31,7 @@ class ComputopShipmentFacadeTest extends Unit
     /**
      * @return void
      */
-    public function testSuccessExpandQuoteWithDefaultShippingMethod(): void
+    public function testExpandQuoteWithDefaultShippingMethodSuccessfullyExpandsQuote(): void
     {
         //Arrange
         $this->tester->setConfig(ComputopShipmentConstants::PAYPAL_EXPRESS_DEFAULT_SHIPMENT_METHOD_KEY, static::CORRECT_SHIPMENT_METHOD_KEY);
@@ -55,7 +55,7 @@ class ComputopShipmentFacadeTest extends Unit
         $quoteTransfer = $this->tester->haveQuoteWithItems();
 
         //Assert
-        $this->expectException(ComputopShipmentException::class);
+        $this->expectException(ComputopDefaultShipmentException::class);
 
         //Act
         $quoteTransfer = $this->tester->getFacade()->expandQuoteWithDefaultShippingMethod($quoteTransfer);

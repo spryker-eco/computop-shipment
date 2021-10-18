@@ -11,7 +11,7 @@ use Generated\Shared\Transfer\AddressTransfer;
 use Generated\Shared\Transfer\QuoteTransfer;
 use Generated\Shared\Transfer\ShipmentMethodTransfer;
 use Generated\Shared\Transfer\ShipmentTransfer;
-use SprykerEco\Zed\ComputopShipment\Business\Exception\ComputopShipmentException;
+use SprykerEco\Zed\ComputopShipment\Business\Exception\ComputopDefaultShipmentException;
 use SprykerEco\Zed\ComputopShipment\ComputopShipmentConfig;
 use SprykerEco\Zed\ComputopShipment\Dependency\ComputopShipmentToShipmentFacadeInterface;
 
@@ -38,9 +38,10 @@ class QuoteDefaultShipmentExpander implements QuoteShipmentExpanderInterface
     }
 
     /**
-     * @param \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer
      *
-     * @throws \SprykerEco\Zed\ComputopShipment\Business\Exception\ComputopShipmentException
+     * @throws \SprykerEco\Zed\ComputopShipment\Business\Exception\ComputopDefaultShipmentException
+     *
+     * @param \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer
      *
      * @return \Generated\Shared\Transfer\QuoteTransfer
      */
@@ -51,7 +52,7 @@ class QuoteDefaultShipmentExpander implements QuoteShipmentExpanderInterface
         $defaultShipmentMethodKey = $this->computopShipmentConfig->getDefaultShipmentMethodKey();
         $defaultShipmentMethodTransfer = $this->shipmentFacade->findShipmentMethodByKey($defaultShipmentMethodKey);
         if ($defaultShipmentMethodTransfer === null || $defaultShipmentMethodTransfer->getIsActive() === false) {
-            throw new ComputopShipmentException(
+            throw new ComputopDefaultShipmentException(
                 sprintf('Default shipment method "%s" is not available!', $defaultShipmentMethodKey)
             );
         }
