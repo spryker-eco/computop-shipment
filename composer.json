@@ -10,6 +10,7 @@
         "spryker/shipment": "^7.0.0 || ^8.0.0",
         "spryker/zed-request": "^3.0.0",
         "spryker-eco/computop": "dev-feature/eco-3656/dev-paypal-express as 3.3.0",
+        "spryker-eco/computop-extension": "dev-feature/eco-3656/dev-paypal-express as 1.0.0",
         "codeception/module-phpbrowser": "^1.0.0",
         "codeception/module-asserts": "^1.0.0"
     },
