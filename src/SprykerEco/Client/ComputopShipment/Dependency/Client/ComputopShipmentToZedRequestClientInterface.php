@@ -18,6 +18,5 @@ interface ComputopShipmentToZedRequestClientInterface
      *
      * @return \Spryker\Shared\Kernel\Transfer\TransferInterface
      */
-    // phpcs:ignore
     public function call($url, TransferInterface $object, $requestOptions = null);
 }
