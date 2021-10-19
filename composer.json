@@ -6,7 +6,7 @@
     "require": {
         "php": ">=7.4",
         "spryker/kernel": "^3.30.0",
-        "spryker/quote": "^1.0.0 || ^2.0.0",
+        "spryker/quote": "^1.2.0 || ^2.0.0",
         "spryker/shipment": "^7.0.0 || ^8.0.0",
         "spryker/zed-request": "^3.0.0",
         "spryker-eco/computop": "dev-feature/eco-3656/dev-paypal-express as 3.3.0",

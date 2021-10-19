@@ -7,7 +7,7 @@
 [![CI](https://scrutinizer-ci.com/g/spryker-eco/computop-shipment/badges/build.png?b=master)](https://scrutinizer-ci.com/g/spryker-eco/computop-shipment/build-status/master)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.4-8892BF.svg)](https://php.net/)
 
-ComputopShipment module provides functionality for extension of default shipment method.
+ComputopShipment module provides a connection betweeen Computop and Shipment modules for default shipment method extension.
 
 ## Installation
 
