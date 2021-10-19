@@ -42,7 +42,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "git@github.com:spryker-eco/computop-extension.git"
+            "url": "https://github.com/spryker-eco/computop-extension"
         }
     ],
     "extra": {
