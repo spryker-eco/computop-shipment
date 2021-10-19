@@ -17,4 +17,4 @@ composer require spryker-eco/computop-shipment
 
 ## Documentation
 
-[Documentation](https://documentation.spryker.com/industry_partners/payment/computop-shipment/computop-shipment.htm)
+[Documentation](https://documentation.spryker.com/industry_partners/payment/computop/computop.html)
