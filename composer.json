@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.4",
-        "spryker-eco/computop-extension": "dev-feature/eco-3656/dev-paypal-express as 1.0.0",
+        "spryker-eco/computop-extension": "^1.0.0",
         "spryker/kernel": "^3.30.0",
         "spryker/shipment": "^8.0.0",
         "spryker/zed-request": "^3.0.0"
