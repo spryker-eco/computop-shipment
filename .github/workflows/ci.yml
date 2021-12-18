@@ -26,7 +26,7 @@ jobs:
 
             - name: Setup PHP
               uses: shivammathur/setup-php@v2
-                  with:
+              with:
                   php-version: ${{ matrix.php }}
                   extensions: mbstring, intl
                   tools: composer:v2
