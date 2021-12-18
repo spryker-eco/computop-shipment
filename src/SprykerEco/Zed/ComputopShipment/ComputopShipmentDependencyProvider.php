@@ -11,6 +11,9 @@ use Spryker\Zed\Kernel\AbstractBundleDependencyProvider;
 use Spryker\Zed\Kernel\Container;
 use SprykerEco\Zed\ComputopShipment\Dependency\ComputopShipmentToShipmentFacadeBridge;
 
+/**
+ * @method \SprykerEco\Zed\ComputopShipment\ComputopShipmentConfig getConfig()
+ */
 class ComputopShipmentDependencyProvider extends AbstractBundleDependencyProvider
 {
     /**
