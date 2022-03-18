@@ -28,4 +28,5 @@ suites:
                       coreNamespaces:
                           - Spryker
                           - SprykerEco
+                          - SprykerEcoTest
                 - \SprykerTest\Zed\Testify\Helper\BusinessHelper

@@ -25,7 +25,7 @@ class ComputopShipmentBusinessFactory extends AbstractBusinessFactory
     {
         return new QuoteDefaultShipmentExpander(
             $this->getConfig(),
-            $this->getShipmentFacade()
+            $this->getShipmentFacade(),
         );
     }
 
